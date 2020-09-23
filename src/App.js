@@ -1,22 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+// components
+
+
+import Navegasiones from "./Components/Navegasiones";
+import Sabados from "./Components/Sabados";
+import Lunes from "./Components/Lunes";
+import Viernes from "./Components/Viernes";
+import Datos from "./Components/Datos";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>hola moises</h1>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Router>
+        <Navegasiones/>
+
+        <div className="container">
+          <Route path="/" component={Viernes} exact />
+          <Route path="/Lunes" component={Lunes} />
+          <Route path="/Sabados" component={Sabados} />
+          <Route path="/Datos" component={Datos} />
+          
+        </div>
+      </Router>
     </div>
   );
 }
