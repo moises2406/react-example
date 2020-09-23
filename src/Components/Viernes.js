@@ -7,28 +7,24 @@ export default class Viernes extends Component {
         <div className="card-group m-2">
           <div className="card col-md-3 m-1">
             <p className="h2 text-center">60</p>
-            <div class="card-body">
+            <div className="card-body">
               <input
                 type="text"
-                id="A1"
                 className="form-control m-1 text-center"
                 placeholder="Salida"
               />
               <input
                 type="text"
-                id="A2"
                 className="form-control m-1 text-center"
                 placeholder="Entrada"
               />
               <input
                 type="text"
-                id="A3"
                 className="form-control m-1 text-center"
                 placeholder="Ps-vendidas"
               />
               <input
                 type="text"
-                id="A4"
                 className="form-control m-1 text-center"
                 placeholder="D-vendido"
               />

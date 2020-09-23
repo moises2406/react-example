@@ -1,53 +1,43 @@
 import React, { Component } from "react";
-import {Link} from 'react-router-dom'
+import { Navbar, Nav } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export default class Navegasiones extends Component {
   render() {
     return (
-      <div>
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-          
-          <Link className="navbar-brand" to='/react-example'>
-            Cuenta
-          </Link>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
+      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar.Brand >
+      <img
+        src={require('../Img/Logo.png')}
+        width="50"
+        height="50"
+        className="d-inline-block align-top"
+        alt="logo"
+      />
+    </Navbar.Brand>
+        <Navbar.Toggle  aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse >
+          <Nav className="mr-auto">
             <ul className="navbar-nav">
-              
-              
-              
               <li className="nav-item">
-                <Link className="nav-link" to='/Sabados' >
-                Sabados
-              </Link>
+                <Link to="/Lunes" className="nav-link">
+                  Lunes
+                </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to='Lunes' >
-                Lunes
-              </Link>
+                <Link to="/Sabados" className="nav-link">
+                  Sabados
+                </Link>
               </li>
-              
               <li className="nav-item">
-                <Link className="nav-link" to='/Datos' >
-                Datos
-              </Link>
+                <Link to="/Datos" className="nav-link">
+                  Datos
+                </Link>
               </li>
-              
             </ul>
-          </div>
-        </nav>
-        
-      </div>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
     );
   }
 }
