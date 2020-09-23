@@ -20,6 +20,11 @@ export default class Navegasiones extends Component {
           <Nav className="mr-auto">
             <ul className="navbar-nav">
               <li className="nav-item">
+                <Link to="/react-example" className="nav-link">
+                  Cuenta
+                </Link>
+              </li>
+              <li className="nav-item">
                 <Link to="/Lunes" className="nav-link">
                   Lunes
                 </Link>
