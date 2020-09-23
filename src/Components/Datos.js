@@ -20,7 +20,7 @@ export default class Datos extends Component {
           </div>
         
         </div>
-        <div className="col-5">
+        <div className="col">
               <input type="text" className="form-control text-center m-2" />
               
             </div>

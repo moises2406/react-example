@@ -6,15 +6,15 @@ export default class Lunes extends Component {
       <div className="p-5">
         <div className="card p-4">
           <div className="row">
-            <div className="col-5">
+            <div className="col-4">
               <h5 className="card-title oja2 ">60</h5>
               <input type="text" className="form-control text-center" />
             </div>
-            <div className="col-5">
+            <div className="col-4">
               <h5 className="card-title oja2 ">75</h5>
               <input type="text" className="form-control text-center" />
             </div>
-            <div className="col">
+            <div className="col-4">
               <h5 className="card-title oja2 ">100</h5>
               <input type="text" className="form-control text-center" />
             </div>

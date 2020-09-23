@@ -39,6 +39,11 @@ export default class Navegasiones extends Component {
                   Datos
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link to="/Dias" className="nav-link">
+                  Dias
+                </Link>
+              </li>
             </ul>
           </Nav>
         </Navbar.Collapse>
