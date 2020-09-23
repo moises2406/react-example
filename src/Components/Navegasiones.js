@@ -46,6 +46,7 @@ export default class Navegasiones extends Component {
             </ul>
           </div>
         </nav>
+        
       </div>
     );
   }
