@@ -19,7 +19,7 @@ function App() {
         <Navegasiones/>
 
         <div className="container">
-          <Route path='/' exact component={Viernes} />
+          <Route  exact component={Viernes} />
           <Route path="/Lunes" component={Lunes} />
           <Route path="/Sabados" component={Sabados} />
           <Route path="/Datos" component={Datos} />
