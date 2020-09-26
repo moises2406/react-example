@@ -6,25 +6,65 @@ export default class Datos extends Component {
       <div className="m-3">
         <div className="card p-4 m-2">
 
-          <div className="row">
-            <div className="col">
-              <h5 className="card-title oja2 ">75</h5>
-              <input type="text" className="form-control text-center m-2" />
-              <input type="text" className="form-control text-center m-2" />
-            </div>
-            <div className="col">
-              <h5 className="card-title oja2 ">100</h5>
-              <input type="text" className="form-control text-center m-2" />
-              <input type="text" className="form-control text-center m-2" />
-            </div>
-          </div>
-        
-        </div>
-        <div className="col">
-              <input type="text" className="form-control text-center m-2" />
-              
+        <div className="row">
+                <div className="col-md-4 mx-auto">
+                    <div className="card mt-4 text-center">
+                        <div className="card-header">
+                            <h1 className="h4">
+                                Account Login
+        </h1>
+                        </div>
+                        <div className="card-body">
+                            <form >
+                                <div className="form-group">
+                                    <input type="email" className="form-control" name="email" placeholder="Email" autofocus />
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" name="password" placeholder="Password" />
+                                </div>
+                                
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-md-4 mx-auto">
+                    <div className="card mt-4 text-center">
+                        <div className="card-header">
+                            <h1 className="h4">
+                                Account Login
+        </h1>
+                        </div>
+                        <div className="card-body">
+                            <form >
+                                <div className="form-group">
+                                    <input type="email" className="form-control " name="email" placeholder="Email"  />
+                                </div>
+                                <div className="form-group">
+                                    <input type="password" className="form-control" name="password" placeholder="Password" />
+                                </div>
+                               
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
 
+        
+        </div>
+        <div className="col-md-4 mx-auto">
+                    <div className="card mt-4 text-center">
+                        
+                        <div className="card-body">
+                            
+                                <div className="form-group">
+                                    <input type="email" className="form-control" name="email" placeholder="Email" autofocus />
+                                </div>
+                                
+                                
+                           
+                        </div>
+                    </div>
+                </div>
         <div className="card  m-2">
           <div className="card-header">name</div>
           <div className="container">
